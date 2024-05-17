@@ -1,0 +1,21 @@
+changes to the original source v3.17.0
+search for "added to work" in below files
+
+Class = yahoofinance.histquotes2.CrumbManager.java
+Method = setCrumb
+Change(s) = added a Map requestProperties with User-Agent when fetching get HISTQUOTES2_CRUMB_URL
+
+
+Class = yahoofinance.histquotes2.CrumbManager.java
+Method = setCookie
+Change(s) = added User-Agent to requestProperties when fetching get HISTQUOTES2_SCRAPE_URL
+
+
+Class = yahoofinance.quotes.query1v7.QuotesRequest.java
+Method = getResult
+Change(s) = added crumb param to params when fetching data
+
+
+Class = yahoofinance.histquotes.HistQuotesRequest.java
+Method = getResult
+Change(s) = added a Map requestProperties with User-Agent when fetching get HISTQUOTES2_CRUMB_URL
